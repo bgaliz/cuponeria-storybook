@@ -54,6 +54,9 @@
       "last 1 safari version"
     ]
   },
+  "peerDependencies": {
+    "semantic-release": ">=16.0.0 <17.0.0"
+  },
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
@@ -71,7 +74,7 @@
     "@storybook/node-logger": "^6.4.9",
     "@storybook/preset-create-react-app": "^4.0.0",
     "@storybook/react": "^6.4.9",
-    "semantic-release": ">=16.0.0 <17.0.0",
+    "semantic-release": "^18.0.1",
     "webpack": "^5.65.0"
   }
 }
