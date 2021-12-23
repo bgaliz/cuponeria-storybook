@@ -1,11 +1,5 @@
 name: Semantic release
 
-branches:
-  only:
-    - master
-    - beta
-    - next
-
 on: push
 jobs:
   publish:
