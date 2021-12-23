@@ -1,7 +1,6 @@
 {
   "name": "storybook",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -74,7 +73,7 @@
     "@storybook/node-logger": "^6.4.9",
     "@storybook/preset-create-react-app": "^4.0.0",
     "@storybook/react": "^6.4.9",
-    "semantic-release": "16.0.0",
+    "semantic-release": "^18.0.1",
     "webpack": "^5.65.0"
   }
 }
