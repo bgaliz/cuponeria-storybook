@@ -16,8 +16,6 @@ jobs:
         run: npm run build 
       - name: Build Storybook
         run: npm run build-storybook
-      - name: Tsc config
-        run: tsc
       - name: Semantic release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

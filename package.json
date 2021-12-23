@@ -18,8 +18,9 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "start": "react-scripts start tsc",
-    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "build": "npm run clean && react-scripts build && tsc",
+    "clean": "rimraf dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
