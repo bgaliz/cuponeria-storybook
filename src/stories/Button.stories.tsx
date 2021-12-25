@@ -1,11 +1,23 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { Button } from "../components/Button";
+import { Button, ButtonProps } from "../components/Button";
 
 export default {
   title: 'Button',
   component: Button,
+  argTypes: {
+    text: {
+      defaultValue: 'Button',
+      control: {type: 'text'}
+    },
+    outline: {
+      control: { type: 'boolean' },
+    },
+  },
 };
 
-export const Default = () => <Button onClick={action('clicked')}>Default Button</Button>;
-export const Primary = () => <Button primary onClick={action('clicked')}>Primary Button</Button>;
+const Template = ({text, onClick, outline, ...rest}: ButtonProps) => {
+  return <Button outline={outline} onClick={action('clicked')} text={text} {...rest}/>
+};
+
+export const Primary = Template.bind({});

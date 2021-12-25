@@ -18,7 +18,7 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run storybook",
     "build": "npm run clean && react-scripts build && tsc",
     "clean": "rimraf dist",
     "test": "react-scripts test",
@@ -74,6 +74,7 @@
     "@storybook/node-logger": "^6.4.9",
     "@storybook/preset-create-react-app": "^4.0.0",
     "@storybook/react": "^6.4.9",
+    "react-docgen-typescript": "^2.2.2",
     "semantic-release": "^18.0.1"
   },
   "release": {
