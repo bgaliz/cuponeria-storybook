@@ -15,6 +15,7 @@ export const colors = {
     
     text: '#000000B3',
     white: '#fff',
+    medium: '#717171',
 
     pink: '#F91E96',
 
